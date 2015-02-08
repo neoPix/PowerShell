@@ -28,3 +28,32 @@ Sometimes, a parameter type will be a little more specific and look like this : 
 ```
 Get-Help -Component Exchange,ActiveDirectory // All the values of an array are separated with a comma (,)
 ```
+
+## Common Parameters
+
+Common parameters can be used by any CmdLet.
+
+Here is the list of the included parameters :
+
+ - -Debug
+ - -ErrorAction
+ - -ErrorVariable
+ - -OutVariable
+ - -OutBuffer
+ - -PipelineVariable
+ - -Verbose
+ - -WarningAction
+ - -WarningVariable
+
+The risk mitigation parameters are:
+
+ - -WhatIf
+ - -Confirm
+
+There are mostly used for debugging and to confirm what you are doing.
+
+`-WhatIf` will display what will appen if you process this command but without doing it.
+
+`-Confirm` will do the same as `-WhatIf` but will allow you to execute the command if you want to.
+
+For more informations you can type `Get-Help about_CommonParameters`.
